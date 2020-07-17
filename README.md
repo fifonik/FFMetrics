@@ -53,12 +53,12 @@ Well, and build shiny graphs of course:
 
 
 ## ToDo
-- Config file for metrics
+- Metrics configuration
 - Command line options
 - Visual controls for graphs manipulating & saving
-- More than 12 files
+- Allow to process more files
 - More options: folder for logs, ...
-- Separate graphs from main program window?
+- Separate graphs from main program window
 - Icon
 
 
