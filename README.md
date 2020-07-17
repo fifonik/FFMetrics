@@ -30,7 +30,7 @@ Well, and build shiny graphs of course:
 ## Requirements
 - .NET Framework 4.7.2 Runtime. Program should notify if you need to install it.
   The framework is already included in Windows 10 1803 and above, but if you use Windows 7 or earlier versions of Windows 10, you may need to [download](https://dotnet.microsoft.com/download/dotnet-framework/net472) and install it.
-- FFMpeg.exe. You need to download it from [official web site](http://ffmpeg.org/download.html) (choose static build for simplicity).
+- FFMpeg.exe. You need to download it from [official web site](https://ffmpeg.org/download.html) (choose static build for simplicity).
 - VMAF require special FFMpeg's build that supports it. It is supported in stable version 4.3.
   In addition, model files must be in sub-folder "vmaf-models". Two most common models are already included in archive.
 
