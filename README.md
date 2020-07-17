@@ -22,6 +22,11 @@ Well, and build shiny graphs of course:
 
 
 
+## Latest version
+**[0.7.0 Beta](releases/FFMetrics.0.7.0b.zip)** [[Changelog](releases/README.md)]
+
+
+
 ## Requirements
 - .NET Framework 4.7.2 Runtime. Program should notify if you need to install it.
   The framework is already included in Windows 10 1803 and above, but if you use Windows 7 or earlier versions of Windows 10, you may need to [download](https://dotnet.microsoft.com/download/dotnet-framework/net472) and install it.
