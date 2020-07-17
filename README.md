@@ -23,7 +23,7 @@ Well, and build shiny graphs of course:
 
 
 ## Latest version
-**[0.7.0 Beta](FFMetrics/releases)**
+**[0.7.0 Beta](releases/)**
 
 
 
