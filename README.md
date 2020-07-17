@@ -30,20 +30,18 @@ Well, and build shiny graphs of course:
 ## Requirements
 - .NET Framework 4.7.2 Runtime. Program should notify if you need to install it.
   The framework is already included in Windows 10 1803 and above, but if you use Windows 7 or earlier versions of Windows 10, you may need to [download](https://dotnet.microsoft.com/download/dotnet-framework/net472) and install it.
-- FFMpeg.exe. You need download it from [official web site](http://ffmpeg.org/download.html) (choose static build for simplicity).
-- VMAF require special FFMpeg's build that supports it (it is supported in stable version 4.3).
-  In addition, model files must be in sub-folder "vmaf-models" (two most common models are included in archive).
+- FFMpeg.exe. You need to download it from [official web site](http://ffmpeg.org/download.html) (choose static build for simplicity).
+- VMAF require special FFMpeg's build that supports it. It is supported in stable version 4.3.
+  In addition, model files must be in sub-folder "vmaf-models". Two most common models are already included in archive.
 
 
 
 ## How to use
 - Unpack into a folder
-- Put FFMpeg.exe into the program folder or make it available in system %PATH%
+- Put FFMpeg.exe (and dll files if you decided to get dynamic version) into the program folder or make it available in system %PATH%
 - Run the program
-- Use UI to add reference file and processing file(s)
+- Use UI to add reference file and processing file(s). You can drag & drop files or use Browse/Add buttons.
 - Click "Calculate" button
-- Enjoy
-
 
 
 
@@ -54,13 +52,13 @@ Well, and build shiny graphs of course:
 
 
 
-
 ## ToDo
 - Config file for metrics
 - Command line options
 - Visual controls for graphs manipulating & saving
 - More than 12 files
-- More options: folder for logs? (cannot think of anything else)
+- More options: folder for logs, ...
+- Separate graphs from main program window?
 - Icon
 
 
