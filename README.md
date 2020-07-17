@@ -5,7 +5,7 @@ The program allow you to select analyzed files without dealing with command line
 
 Well, and build shiny graphs of course:
 
-<p align="center"><img src="screenshots/screenshot.png" width="1282"/></p>
+<p align="center"><img src="screenshots/screenshot.png" width="919"/></p>
 
 
 
