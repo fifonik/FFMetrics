@@ -15,6 +15,7 @@ Features:
 - Per file results can be saved to tab-delimited csv file (FFMetrics.Results.csv)
 - VMAF model can be selected from UI (4K videos require different model)
 
+<p align="center"><img src="screenshots/screenshot.png" width="1282" " /></p>
 
 Requirements:
 - .NET Framework 4.7.2 Runtime. Program should notify if you need to install it.
