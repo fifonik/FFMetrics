@@ -68,6 +68,7 @@ Well, and build shiny interactive graphs of course:
 fifonik
 
 
+
 ## Discussions
-- [Thread in Vegas forum](https://www.vegascreativesoftware.info/us/forum/ffmetrics-yet-another-program-for-quality-metrics-calculation--122246/)
+- [Thread in Vegas forum](https://www.vegascreativesoftware.info/us/forum/ffmetrics-yet-another-program-for-quality-metrics-calculation--122246/) (in English)
 - [Thread in IXBT forum](https://forum.ixbt.com/topic.cgi?id=29:36847)] (in Russian)
