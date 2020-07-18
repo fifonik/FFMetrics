@@ -54,15 +54,18 @@ Well, and build shiny interactive graphs of course:
 
 
 ## ToDo
-- Metrics configuration
 - Command line options
+- Metrics configuration
 - Visual controls for graphs manipulating & saving
-- Allow to process more files
-- More options: folder for logs, ...
-- Separate graphs from main program window
+- Allow to specify folder for logs
+- Allow to process more files in one go
+- Separates graphs from main program window
 - Icon
 
 
 
 ## Author
-fifonik [[blog](http://fifonik.com/blog/)]
+fifonik
+  [[blog](http://fifonik.com/blog/)]
+  [[Thread in Vegas forum](https://www.vegascreativesoftware.info/us/forum/ffmetrics-yet-another-program-for-quality-metrics-calculation--122246/)]
+  [[Thread in IXBT forum]](https://forum.ixbt.com/topic.cgi?id=29:36847)] (in Russian)
