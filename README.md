@@ -1,4 +1,4 @@
-## FFMetrics -- Yet another program for Video Quality Metrics visualisation
+## FFMetrics -- yet another program for Video Quality Metrics visualisation
 
 FFMpeg.exe can be used for calculating different visual quality metrics. 
 FFMetrics is a FFMpeg GUI, so all calculations are done by FFMpeg.
