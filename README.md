@@ -58,8 +58,9 @@ Well, and build shiny interactive graphs of course:
     -vmaf-model=filename.pkl       Default: vmaf_v0.6.1.pkl
     -log-level=DEBUG|ERROR|INFO    Default: INFO
 
-#### Example
-`FFMetrics.exe -log-frames -metric=SSIM -metric=VMAF -save-results -run c:\path\to\ref.mp4 c:\path\to\file1.mp4 c:\path\to=file2.avi`
+#### Examples
+`FFMetrics.exe \\server\path1\to\ref.mp4 c:\path2\file.mp4`<br />
+`FFMetrics.exe -log-frames -metric=SSIM -metric=VMAF -run c:\path1\ref.mp4 c:\path2\file1.avi c:\path2\file2.avs`
 
 
 ## Limitations
