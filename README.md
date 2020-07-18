@@ -71,7 +71,6 @@ Well, and build shiny interactive graphs of course:
 
 
 ## ToDo
-- Command line options
 - Metrics configuration
 - Visual controls for graphs manipulating & saving
 - Allow to specify folder for logs
