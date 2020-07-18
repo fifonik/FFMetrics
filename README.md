@@ -21,6 +21,7 @@ Well, and build shiny interactive graphs of course:
 - Average metrics can be saved to tab-delimited csv file (FFMetrics.Results.csv) with date/time and file name included 
 - VMAF model can be choosen from UI (4K videos require different model)
 - Only parts of video files could be analyzed
+- You can run the program suppliying most options as command line parameters.
 
 
 
@@ -44,6 +45,21 @@ Well, and build shiny interactive graphs of course:
 - Use UI to add reference file and at least one processing file. You can drop files from Explorer or use file choosers.
 - Click "Calculate" button
 
+
+## How to run with command line options
+**FFMetrics.exe \[options\] ref.mp4 file1.mp4 \[file2.mp4\] \[file3.mp4\] \[...\]**
+
+### Accepted options
+    -log-frames                    Log frames' metrics in csv files
+    -log-commands                  Log ffmpeg commands
+    -run                           Run calculation when program started
+    -save-results                  After calculation save results to log
+    -metric=PSNR|SSIM|VMAF         Default: all
+    -vmaf-model=filename.pkl       Default: vmaf_v0.6.1.pkl
+    -log-level=DEBUG|ERROR|INFO    Default: INFO
+
+#### Example
+`FFMetrics.exe -log-frames -metric=SSIM -metric=VMAF -save-results -run c:\path\to\ref.mp4 c:\path\to\file1.mp4 c:\path\to=file2.avi`
 
 
 ## Limitations
