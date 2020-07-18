@@ -59,7 +59,7 @@ Well, and build shiny interactive graphs of course:
     -log-level=DEBUG|ERROR|INFO    Default: INFO
 
 #### Examples
-`FFMetrics.exe \\server\path1\to\ref.mp4 c:\path2\file.mp4`<br />
+`FFMetrics.exe \\server\path\to\ref.mp4 c:\path\to\file.mp4`<br />
 `FFMetrics.exe -log-frames -metric=SSIM -metric=VMAF -run c:\path1\ref.mp4 c:\path2\file1.avi c:\path2\file2.avs`
 
 
@@ -87,5 +87,5 @@ fifonik
 
 
 ## Discussions
-- [Thread in Vegas forum](https://www.vegascreativesoftware.info/us/forum/ffmetrics-yet-another-program-for-quality-metrics-calculation--122246/) (in English)
-- [Thread in IXBT forum](https://forum.ixbt.com/topic.cgi?id=29:36847) (in Russian)
+- [Discussion in Vegas forum](https://www.vegascreativesoftware.info/us/forum/ffmetrics-yet-another-program-for-quality-metrics-calculation--122246/) (in English)
+- [Discussion in IXBT forum](https://forum.ixbt.com/topic.cgi?id=29:36847) (in Russian)
