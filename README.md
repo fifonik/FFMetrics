@@ -1,4 +1,4 @@
-## FFMetrics -- yet another program for Video Quality Metrics visualization
+## FFMetrics — yet another program for Video Quality Metrics visualization
 
 FFMpeg can be used for calculating different visual quality metrics (PSNR, SSIM, VMAF). 
 FFMetrics is a FFMpeg GUI that purpose is to visualize the metrics calculated by FFMpeg.
