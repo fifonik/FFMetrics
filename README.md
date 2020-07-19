@@ -64,8 +64,7 @@ Well, and build shiny interactive graphs of course:
 
 
 ## Limitations
-- Slower than [similar program](https://tools4vegas.com/render-quality-metrics-ffmpeg/) from @wwaag
-- No MSE, no libvmaf's PSNR & SSIM (ffmpeg can calculate PSNR & SSIM in two different ways and values that you can get using different methods are not the same)
+- No MSE. No libvmaf's PSNR & SSIM (ffmpeg can calculate PSNR & SSIM in two different ways and values that you can get using different methods are not exactly the same)
 - ffmpeg.exe sometimes gives too low results (to be investigated)
 
 
