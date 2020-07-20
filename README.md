@@ -69,16 +69,6 @@ Well, and build shiny interactive graphs of course:
 
 
 
-## ToDo
-- Metrics configuration
-- Visual controls for graphs manipulating & saving
-- Allow to specify folder for logs
-- Allow to process more files in one go
-- Separates graphs from main program window
-- Icon
-
-
-
 ## Author
 fifonik
 
