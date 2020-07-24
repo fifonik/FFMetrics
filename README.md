@@ -51,7 +51,7 @@ Well, and build shiny interactive graphs of course:
 
 ### Accepted options
     -log-frames                    Log frames' metrics in csv files
-    -log-frames-dir                Filder where frame's metrics will be stored
+    -log-frames-dir=C:\path\       Filder where frame's metrics will be stored
     -log-commands                  Log ffmpeg commands
     -run                           Run calculation when program started
     -save-results                  After calculation save results to log
