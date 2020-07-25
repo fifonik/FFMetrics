@@ -1,9 +1,12 @@
 ## ToDo
 
-- Metrics configuration
+- Read configuration file
+- Add total progress indicator
 - Allow to specify results file
 - Separate graphs from main program window
-- Visual controls for graphs manipulating & saving
-- Total progress indicator
-- Icon
-- Allow to process more files in one go
+- Add ability to save graphs
+- Add visual controls for graphs manipulating
+- Show file's media info in ToolTip
+- Add VMAF phone model option
+- Add program icon
+- Allow to process more files (>12)
