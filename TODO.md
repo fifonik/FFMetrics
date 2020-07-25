@@ -1,6 +1,6 @@
 ## ToDo
 
-Before v1.0.0
+### Before v1.0.0
 - Read configuration file
 - Add total progress indicator
 - Add VMAF harmonic mean option (+command line param)
@@ -10,7 +10,7 @@ Before v1.0.0
 - Add ability to save graphs
 - Add program icon
 
-After v1.0.0
+### After v1.0.0
 - Add visual controls for graphs manipulating
 - Show file's media info in ToolTip
 - NET 4.7.2 => NET Core 3.1 (to rid off Newtonsoft.Json dependency)
