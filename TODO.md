@@ -2,7 +2,7 @@
 
 ### Before v1.0.0
 - Read configuration file
-- Add simple total progress indicator
+- Add total progress indicator
 - Add VMAF harmonic mean option (+command line param)
 - Add VMAF phone model option (+command line param)
 - Allow to specify results file (+command line param)
@@ -11,7 +11,6 @@
 - Add program icon
 
 ### After v1.0.0
-- More accurate  total progress indicator
 - Add visual controls for graphs manipulating
 - Show processed file's media info in ToolTip
 - NET 4.7.2 => NET Core 3.1 (to rid off Newtonsoft.Json dependency)
