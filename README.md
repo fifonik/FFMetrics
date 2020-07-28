@@ -25,7 +25,7 @@ Well, and build shiny interactive graphs of course:
 
 
 
-## Latest version: [0.7.5 Beta](https://github.com/fifonik/FFMetrics/releases)
+## Latest version: [0.8.0 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.8.0)
 
 
 
@@ -55,8 +55,11 @@ Well, and build shiny interactive graphs of course:
     -log-commands                  Log ffmpeg commands
     -run                           Run calculation when program started
     -save-results                  After calculation save results to log
+    -save-results-file=C:\path\file.csv
     -metric=PSNR|SSIM|VMAF         Default: all
     -vmaf-model=filename.pkl       Default: vmaf_v0.6.1.pkl
+    -vmaf-harmonic-mean
+    -vmaf-phone-model
     -log-level=DEBUG|ERROR|INFO    Default: INFO
 
 #### Examples
