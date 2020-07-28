@@ -1,11 +1,6 @@
 ## ToDo
 
 ### Before v1.0.0
-- Read configuration file
-- Add total progress indicator
-- Add VMAF harmonic mean option (+command line param)
-- Add VMAF phone model option (+command line param)
-- Allow to specify results file (+command line param)
 - Separate graphs from main program window
 - Add ability to save graphs
 - Add program icon
