@@ -43,7 +43,7 @@ Well, and build shiny interactive graphs of course:
 - Put FFMpeg.exe (and accompanied dll files if you use dynamic build) into the program folder or make it available through system %PATH%
 - Run the program
 - Use UI to add reference file and at least one processing file. You can drop files from Explorer or use file choosers.
-- Click "Calculate" button
+- Click "Start" button
 
 
 ## How to run with command line options
