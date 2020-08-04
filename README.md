@@ -64,7 +64,7 @@ Well, and build shiny interactive graphs of course:
 
 #### Examples
 `FFMetrics.exe \\server\path\to\ref.mp4 "c:\path\to\my file.mp4"`<br />
-`FFMetrics.exe -log-frames -metric=SSIM -metric=VMAF -run c:\path1\ref.mp4 c:\path2\file1.avi c:\path2\file2.avs`
+`FFMetrics.exe -log-frames -metric=SSIM -metric=VMAF -run c:\to\ref.mp4 c:\to1\file1.avi c:\to2\file2.avs`
 
 
 ## Limitations
