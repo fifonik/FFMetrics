@@ -15,7 +15,7 @@ Well, and build shiny interactive graphs of course:
 - Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers
 - Processing up to 12 files in one go
 - No limitations on frame size for PSNR/SSIM, Full HD/4K for VMAF
-- Frames graphs can be zoomed in/out with mouse wheel (try it over graph or axes) and panned with right mouse button
+- Frames graphs can be zoomed in/out with mouse wheel (try it over graph or axes), panned with right mouse button and saved as PNG
 - Frames metrics can be saved as tab-delimited csv files that can be opened in Excel. Files are created aside of analyzed files and named as filename.mp4.PSNR.csv.
 - FFMpeg commands can be saved to log file (FFMetrics.log)
 - Average metrics can be saved to tab-delimited csv file (FFMetrics.Results.csv) with date/time and file name included 
@@ -25,7 +25,7 @@ Well, and build shiny interactive graphs of course:
 
 
 
-## Latest version: [0.8.0 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.8.0)
+## Latest version: [0.8.1 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.8.1)
 
 
 
