@@ -2,8 +2,6 @@
 
 ### Before v1.0.0
 - Separate graphs from main program window
-- Add ability to save graphs
-- Add program icon
 
 ### After v1.0.0
 - Add visual controls for graphs manipulating
