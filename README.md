@@ -12,16 +12,16 @@ Well, and build shiny interactive graphs of course:
 
 ## Features
 - PSNR, SSIM, VMAF visual quality metrics
-- Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers
 - Processing up to 12 files in one go
+- Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers
 - No limitations on frame size for PSNR/SSIM, Full HD/4K for VMAF
 - Frames graphs can be zoomed in/out with mouse wheel (try it over graph or axes), panned with right mouse button and saved as PNG
-- Frames metrics can be saved as tab-delimited csv files that can be opened in Excel. Files are created aside of analyzed files and named as filename.mp4.PSNR.csv.
+- Frames metrics can be saved as tab-delimited csv files and then opened in Excel.
 - FFMpeg commands can be saved to log file (FFMetrics.log)
-- Average metrics can be saved to tab-delimited csv file (FFMetrics.Results.csv) with date/time and file name included 
-- VMAF model can be choosen from UI (4K videos require different model)
+- Average metrics can be appended to tab-delimited csv file (FFMetrics.Results.csv) with date/time and file name included 
+- Proper VMAF model selected automatically based on reference media info, but can be changes using UI (4K videos require different model)
 - Only parts of video files could be analyzed
-- You can run the program suppliying most options as command line parameters.
+- You can use the program supplying most options as command line parameters.
 
 
 
@@ -42,7 +42,7 @@ Well, and build shiny interactive graphs of course:
 - Unpack into a folder
 - Put FFMpeg.exe (and accompanied dll files if you use dynamic build) into the program folder or make it available through system %PATH%
 - Run the program
-- Use UI to add reference file and at least one processing file. You can drop files from Explorer or use file choosers.
+- Use UI to add reference file and at least one processing file. You can drag & drop files from Explorer or use file choosers.
 - Click "Start" button
 
 
