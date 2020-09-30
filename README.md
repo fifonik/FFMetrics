@@ -69,7 +69,7 @@ Well, and build shiny interactive graphs of course:
 
 ## Limitations
 - No MSE. No libvmaf's PSNR & SSIM (ffmpeg can calculate PSNR & SSIM in two different ways and values that you can get using different methods are not exactly the same)
-- ffmpeg.exe sometimes gives too low results (to be investigated)
+- ffmpeg.exe sometimes gives too low results ([details](https://www.vegascreativesoftware.info/us/forum/magicyuv-2-20-released--117638/?page=3#ca772279))
 
 
 
