@@ -14,4 +14,5 @@
 - Add visual controls for graphs manipulating
 - NET 4.7.2 => NET Core 3.1 (to rid off Newtonsoft.Json dependency)
 - Allow to process more files (>12)
+- (?) Allow user to provide options for FFMpeg (-hwaccel for example)
 - (?)Publish source codes
