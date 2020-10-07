@@ -3,7 +3,7 @@
 ### Before v1.0.0
 - Add colour format, colour depths and color range to displayed media info
 - Show media info for processed file's as ToolTip
-- Do reset on changing ref
+- Reset metrics/graphs on changing ref
 - Calculate only "blank" metrics/graps. In this case it would be possible add another file and following calculate only process this file. 'Reset' button should be used if all metrics/graphs recalculation required.
 - Keep graphs colours when ticking/unticking files
 - Separate graphs from main program window
