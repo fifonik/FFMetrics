@@ -1,7 +1,7 @@
 ## ToDo
 
 - Show colour format, colour depths and color range
-- Allow user to choose what to display as metric value: Avg or Min. Avg is used now
+- In addition to avg metric show min, max, std. devistion
 - Show warning on ref/file frame size or colour format/range mismatches
 - Add сontrols for colour format/range conversion
 - Separate graphs from main program window
