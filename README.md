@@ -19,7 +19,7 @@ Well, and build shiny interactive graphs of course:
 - Frames metrics can be saved as tab-delimited csv files and then opened in Excel.
 - FFMpeg commands can be saved to log file (FFMetrics.log)
 - Average metrics can be appended to tab-delimited csv file (FFMetrics.Results.csv) with date/time and file name included 
-- Proper VMAF model selected automatically based on reference media info, but can be changes using UI (4K videos require different model)
+- Proper VMAF model selected automatically based on reference media info, but can be changed using UI (4K videos require different model)
 - Only parts of video files could be analyzed
 - You can use the program supplying most options as command line parameters.
 
