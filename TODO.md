@@ -1,7 +1,5 @@
 ## ToDo
 
-- Show colour format, colour depths and color range
-- In addition to avg metric show min, max, std. deviation
 - Show warning on ref/file frame size or colour format/range mismatches
 - Add сontrols for colour format/range conversion
 - Separate graphs from main program window
