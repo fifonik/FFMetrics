@@ -1,8 +1,8 @@
 ## FFMetrics — yet another program for video Visual Quality Metrics visualization
 
 FFMpeg can be used for calculating different visual quality metrics (PSNR, SSIM, VMAF). 
-FFMetrics is a FFMpeg GUI that purpose is to visualize the metrics calculated by FFMpeg.
-The program allows you to select analyzed files without dealing with command line, calculate and visualize the quality metrics for all of them in one go.
+FFMetrics is a FFMpeg GUI that purpose is to visualize quality metrics calculated by FFMpeg.
+The program allows you to select files without dealing with command line, calculate & visualize PSNR, SSIM & VMAF quality metrics for all of them in one go.
 
 Well, and build shiny interactive graphs of course:
 
@@ -25,7 +25,7 @@ Well, and build shiny interactive graphs of course:
 
 
 
-## Latest version: [0.8.7 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.8.7)
+## Latest version: [0.9.0 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.9.0)
 
 
 
@@ -57,14 +57,16 @@ Well, and build shiny interactive graphs of course:
     -save-results                  After calculation save results to log
     -save-results-file=C:\path\file.csv
     -metric=PSNR|SSIM|VMAF         Default: all
+    -project=C:\path\to\project    Read project options from specified file
     -vmaf-model=filename.pkl       Default: vmaf_v0.6.1.pkl
-    -vmaf-harmonic-mean
+    -vmaf-pool=mean|harmonic_mean
     -vmaf-phone-model
     -log-level=DEBUG|ERROR|INFO    Default: INFO
 
 #### Examples
 `FFMetrics.exe \\server\path\to\ref.mp4 "c:\path\to\my file.mp4"`<br />
-`FFMetrics.exe -log-frames -metric=SSIM -metric=VMAF -run c:\to\ref.mp4 c:\to1\file1.avi c:\to2\file2.avs`
+`FFMetrics.exe -log-frames -metric=SSIM -metric=VMAF -run c:\to\ref.mp4 c:\to1\file1.avi c:\to2\file2.avs`<br />
+`FFMetrics.exe -project=c:\path\to\project.ffmproj -run`<br />
 
 
 ## Limitations
