@@ -50,23 +50,23 @@ Well, and build shiny interactive graphs of course:
 **FFMetrics.exe \[options\] ref.mp4 file1.mp4 \[file2.mp4\] \[file3.mp4\] \[...\]**
 
 ### Accepted options
-    -log-frames                    Log frames' metrics in csv files
-    -log-frames-dir=C:\path\       Folder where frame's metrics will be stored
-    -log-commands                  Log ffmpeg commands
-    -run                           Run calculation when program started
-    -save-results                  After calculation save results to log
+    -log-frames                            Log frames' metrics in csv files
+    -log-frames-dir=C:\path\               Folder where frame's metrics will be stored
+    -log-commands                          Log ffmpeg commands
+    -run                                   Run calculation when program started
+    -save-results                          After calculation save results to log
     -save-results-file=C:\path\file.csv
-    -metric=PSNR|SSIM|VMAF         Default: all
-    -project=C:\path\to\project    Read project options from specified file
-    -vmaf-model=filename.pkl       Default: vmaf_v0.6.1.pkl
+    -metric=PSNR|SSIM|VMAF                 Default: all
+    -project=C:\path\to\project.ffmproj    Read project options from specified file
+    -vmaf-model=filename.pkl               Default: vmaf_v0.6.1.pkl
     -vmaf-pool=mean|harmonic_mean
     -vmaf-phone-model
-    -log-level=DEBUG|ERROR|INFO    Default: INFO
+    -log-level=DEBUG|ERROR|INFO            Default: INFO
 
 #### Examples
 `FFMetrics.exe \\server\path\to\ref.mp4 "c:\path\to\my file.mp4"`<br />
 `FFMetrics.exe -log-frames -metric=SSIM -metric=VMAF -run c:\to\ref.mp4 c:\to1\file1.avi c:\to2\file2.avs`<br />
-`FFMetrics.exe -project=c:\path\to\project.ffmproj -run`<br />
+`FFMetrics.exe -project=c:\path\to\project.ffmproj -vmaf-pool=harmonic_mean -run`<br />
 
 
 ## Limitations
