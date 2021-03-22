@@ -25,7 +25,7 @@ Well, and build shiny interactive graphs of course:
 
 
 
-## Latest version: [0.9.3 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.9.3)
+## Latest version: [0.9.4 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.9.4)
 
 
 
