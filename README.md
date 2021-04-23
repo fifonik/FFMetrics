@@ -25,7 +25,7 @@ Well, and build shiny interactive graphs of course:
 
 
 
-## Latest version: [0.9.4 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.9.4)
+## Latest version: [0.9.5 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.9.5)
 
 
 
@@ -34,7 +34,7 @@ Well, and build shiny interactive graphs of course:
   The framework is already included in Windows 10 1803 and above, but if you use earlier versions of Windows 10 or Windows 7/8, you will be asked to [download](https://dotnet.microsoft.com/download/dotnet-framework/net472) and install it.
 - FFMpeg.exe. You need to download it from [official web site](https://ffmpeg.org/download.html) (choose static build for simplicity).
 - VMAF metric require special FFMpeg's build. It is supported in stable version 4.3.
-  In addition, VMAF model files must be in sub-folder "vmaf-models". Two the most common models are already included in archive. You can get other models from [Netflix VMAF project](https://github.com/Netflix/vmaf/)
+  In addition, VMAF model files must be in sub-folder "vmaf-models". The most common models are included in archive. You can get other models from [Netflix VMAF project](https://github.com/Netflix/vmaf/)
 
 
 
