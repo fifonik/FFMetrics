@@ -13,14 +13,17 @@ Well, and build shiny interactive graphs of course:
 ## Features
 - PSNR, SSIM, VMAF visual quality metrics
 - Processing up to 12 files in one go
-- Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers
+- Displaying brief media info for all files: reference and distorted
+- Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers 
 - No limitations on frame size for PSNR/SSIM, Full HD/4K for VMAF
 - Frames graphs can be zoomed in/out with mouse wheel (try it over graph or axes), panned with right mouse button and saved as PNG
-- Frames metrics can be saved as tab-delimited csv files and then opened in Excel.
+- Frames metrics can be saved as tab-delimited csv files and then opened in Excel
 - FFMpeg commands can be saved to log file (FFMetrics.log)
-- Average metrics can be appended to tab-delimited csv file (FFMetrics.Results.csv) with date/time and file name included 
+- Average metrics, frames statistics, Frame size, bitrate, date/time and file name can be saved/appended to tab-delimited csv file and then opened in Excel
+- Bad frames can be extracted as PNG images for further analisys
 - Proper VMAF model selected automatically based on reference media info, but can be changed using UI (4K videos require different model)
-- Only parts of video files could be analyzed
+- Supported VMAFmodel types (pkl or json) detected automatically
+- Only parts of video files can be analyzed
 - You can use the program supplying most options as command line parameters.
 
 
@@ -31,10 +34,10 @@ Well, and build shiny interactive graphs of course:
 
 ## Requirements
 - .NET Framework 4.7.2+. Program should notify if you need to install it.
-  The framework is already included in Windows 10 1803 and above, but if you use earlier versions of Windows 10 or Windows 7/8, you will be asked to [download](https://dotnet.microsoft.com/download/dotnet-framework/net472) and install it.
+  The framework is already included in Windows 10 1803 and above, but if you use earlier versions of Windows 10 or Windows 7/8, you may be asked to [download](https://dotnet.microsoft.com/download/dotnet-framework/net472) and install it.
 - FFMpeg.exe. You need to download it from [official web site](https://ffmpeg.org/download.html) (choose static build for simplicity).
 - VMAF metric require special FFMpeg's build. It is supported since version 4.3 (stable).
-  In addition, VMAF model files must be in sub-folder "vmaf-models". The most common models are included in archive. You can get other models from [Netflix VMAF project](https://github.com/Netflix/vmaf/)
+  In addition, VMAF model files must be in sub-folder "vmaf-models". The most common models are already included in archive. You can get other models from [Netflix VMAF project](https://github.com/Netflix/vmaf/)
 
 
 
@@ -42,7 +45,7 @@ Well, and build shiny interactive graphs of course:
 - Unpack into a folder
 - Put FFMpeg.exe (and accompanied dll files if you use dynamic build) into the program folder or make it available through system %PATH%
 - Run the program
-- Use UI to add reference file and at least one processing file. You can drag & drop files from Explorer or use file choosers.
+- Use UI to add reference file and at least one processing file (you can drag & drop files from Explorer or use file choosers).
 - Click "Start" button
 
 
@@ -70,8 +73,9 @@ Well, and build shiny interactive graphs of course:
 
 
 ## Limitations
-- No MSE. No libvmaf's PSNR & SSIM (ffmpeg can calculate PSNR & SSIM in two different ways and values that you can get using different methods are not exactly the same)
-- You have to be careful and supply video files in the same colour range or with correct meta with the colour range. Otherwise ffmpeg.exe could make incorrect transformation and give you too low results ([more details](https://www.vegascreativesoftware.info/us/forum/magicyuv-2-20-released--117638/?page=3#ca772279)). I'm planning to improve the program to prevent/minimize this happen.
+- No MSE
+- No libvmaf's PSNR & SSIM (ffmpeg can calculate PSNR & SSIM in two different ways and values that you can get using different methods are not exactly the same)
+- You have to be careful and supply video files in the same colour range or with correct meta with the colour range. Otherwise ffmpeg.exe could make incorrect transformation and give you incorrect results ([more details](https://www.vegascreativesoftware.info/us/forum/magicyuv-2-20-released--117638/?page=3#ca772279)). I do have plans to improve the program to prevent/minimize this happen.
 
 
 
