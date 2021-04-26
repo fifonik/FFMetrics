@@ -13,18 +13,18 @@ Well, and build shiny interactive graphs of course:
 ## Features
 - PSNR, SSIM, VMAF visual quality metrics
 - Processing up to 12 files in one go
-- Displaying brief media info for all files: reference and distorted
-- Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers 
 - No limitations on frame size for PSNR/SSIM, Full HD/4K for VMAF
+- Brief media info for reference and distorted files
+- Bad frames can be extracted as PNG images for further analisys
+- Only parts of video files can be analyzed
+- Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers 
 - Frames graphs can be zoomed in/out with mouse wheel (try it over graph or axes), panned with right mouse button and saved as PNG
 - Frames metrics can be saved as tab-delimited csv files and then opened in Excel
 - FFMpeg commands can be saved to log file (FFMetrics.log)
-- Average metrics, frames statistics, Frame size, bitrate, date/time and file name can be saved/appended to tab-delimited csv file and then opened in Excel
-- Bad frames can be extracted as PNG images for further analisys
+- Average metrics, frames statistics, Frame size, bitrate, date/time and file name can be saved to tab-delimited csv file (appended) and then opened in Excel
 - Proper VMAF model selected automatically based on reference media info, but can be changed using UI (4K videos require different model)
 - Supported VMAFmodel types (pkl or json) detected automatically
-- Only parts of video files can be analyzed
-- You can use the program supplying most options as command line parameters.
+- Most program options could be supplyed as command line parameters
 
 
 
