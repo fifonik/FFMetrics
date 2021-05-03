@@ -21,9 +21,9 @@ Well, and build shiny interactive graphs of course:
 - Frames graphs can be zoomed in/out with mouse wheel (try it over graph or axes), panned with right mouse button and saved as PNG
 - Frames metrics can be saved as tab-delimited csv files and then opened in Excel
 - FFMpeg commands can be saved to log file (FFMetrics.log)
-- Average metrics, frames statistics, Frame size, bitrate, date/time and file name can be saved to tab-delimited csv file (appended) and then opened in Excel
-- Proper VMAF model selected automatically based on reference media info, but can be changed using UI (4K videos require different model)
-- Supported VMAFmodel types (pkl or json) detected automatically
+- Average metrics, frames statistics, frame size, bitrate, date/time and file name can be saved to tab-delimited csv file (appended) and then opened in Excel
+- Proper VMAF model selected automatically based on reference media info, but can be changed using UI
+- Supported VMAF model type (pkl or json) detected automatically
 - Most program options could be supplyed as command line parameters
 
 
