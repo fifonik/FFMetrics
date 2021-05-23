@@ -15,6 +15,7 @@ Well, and build shiny interactive graphs of course:
 - Processing up to 12 files in one go
 - No limitations on frame size for PSNR/SSIM, Full HD/4K for VMAF
 - Brief media info for reference and distorted files
+- Ref's thumbnail 
 - Bad frames can be extracted as PNG images for further analisys
 - Only parts of video files can be analyzed
 - Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers 
