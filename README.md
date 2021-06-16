@@ -15,17 +15,17 @@ Well, and build shiny interactive graphs of course:
 - Processing up to 12 files in one go
 - No limitations on frame size for PSNR/SSIM, Full HD/4K for VMAF
 - Brief media info for reference and distorted files
-- Ref's thumbnail 
-- Bad frames can be extracted as PNG images for further analisys
+- Thumbnail for reference file  
+- “Bad” frames can be extracted and saved as PNG images for further analisys
 - Only parts of video files can be analyzed
 - Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers 
-- Frames graphs can be zoomed in/out with mouse wheel (try it over graph or axes), panned with right mouse button and saved as PNG
-- Frames metrics can be saved as tab-delimited csv files and then opened in Excel
-- FFMpeg commands can be saved to log file (FFMetrics.log)
-- Average metrics, frames statistics, frame size, bitrate, date/time and file name can be saved to tab-delimited csv file (appended) and then opened in Excel
-- Proper VMAF model selected automatically based on reference media info, but can be changed using UI
-- Supported VMAF model type (pkl or json) detected automatically
-- Most program options could be supplyed as command line parameters
+- Frames graphs can be zoomed in/out with mouse wheel (try it over graph or graph's axes), panned with right mouse button and saved as PNG
+- Frames metrics can be saved as tab-delimited **csv** files and then opened in Excel
+- FFMpeg commands can be saved to log file (`FFMetrics.log`)
+- Average metrics, frames statistics, frame size, bitrate, date/time and file name can be saved to tab-delimited **csv** file (appended) and then opened in Excel
+- VMAF model selected automatically based on reference media info, but can be changed using UI
+- Supported VMAF models type (**pkl** or **json**) detected automatically
+- Most program options could be supplied as command line parameters
 
 
 
@@ -35,10 +35,10 @@ Well, and build shiny interactive graphs of course:
 
 ## Requirements
 - .NET Framework 4.7.2+. Program should notify if you need to install it.
-  The framework is already included in Windows 10 1803 and above, but if you use earlier versions of Windows 10 or Windows 7/8, you may be asked to [download](https://dotnet.microsoft.com/download/dotnet-framework/net472) and install it.
-- FFMpeg.exe. You need to download it from [official web site](https://ffmpeg.org/download.html) (choose static build for simplicity).
-- VMAF metric require special FFMpeg's build. It is supported since version 4.3 (stable).
-  In addition, VMAF model files must be in sub-folder "vmaf-models". The most common models are already included in archive. You can get other models from [Netflix VMAF project](https://github.com/Netflix/vmaf/)
+  The framework is already included since Windows 10 1803, but if you use earlier versions of Windows 10 or Windows 7/8, you may be asked to [download](https://dotnet.microsoft.com/download/dotnet-framework/net472) and install it.
+- FFMpeg.exe. You need to download it from [official ffmpeg web site](https://ffmpeg.org/download.html). Choose static build for simplicity.
+- VMAF metric require special FFMpeg's build. It is supported since FFMpeg version 4.3 (stable).
+  In addition, VMAF model files must be in sub-folder `vmaf-models`. The most common models are already included in archive. You can get other models from [Netflix VMAF project](https://github.com/Netflix/vmaf/)
 
 
 
@@ -47,7 +47,8 @@ Well, and build shiny interactive graphs of course:
 - Put FFMpeg.exe (and accompanied dll files if you use dynamic build) into the program folder or make it available through system %PATH%
 - Run the program
 - Use UI to add reference file and at least one distorted file (you can drag & drop files from Explorer or use file choosers).
-- Click "Start" button
+- Select metrics you'd like to calculate
+- Click “Start” button
 
 
 ## How to run with command line options
@@ -60,14 +61,14 @@ Well, and build shiny interactive graphs of course:
     -log-frames                            Log frames' metrics in csv files
     -log-frames-dir=C:\path\               Folder where frame's metrics will be stored
     -log-level=DEBUG|ERROR|INFO            Default: INFO
-    -metric=PSNR|SSIM|VMAF                 Default: all (-metric=PSNR -metric=SSIM -metric=VMAF)
+    -metric=PSNR|SSIM|VMAF                 Default: all (`-metric=PSNR -metric=SSIM -metric=VMAF`)
     -project=C:\path\to\project.ffmproj    Read project options from specified file
     -run                                   Run calculation when program started
     -save-results                          After calculation save results to log
     -save-results-file=C:\path\file.csv
     -scaling-method=NEIGHBOR|GAUSS|BILINEAR|BICUBIC|LANCZOS|SINC|SPLINE
                                            Default: BICUBIC
-    -vmaf-model=filename.pkl               Default: vmaf_v0.6.1.pkl
+    -vmaf-model=filename.pkl               Default: detected automatically based on reference media info
     -vmaf-pool=MEAN|HARMONIC_MEAN          Default: MEAN
     -vmaf-phone-model
 
@@ -85,17 +86,21 @@ Well, and build shiny interactive graphs of course:
 
 ## Troubleshooting
 - Delete `FFMetrics.log`
-- Run the program with option `-log-level=debug`
-- In program menu activate option "Write FFMpeg commands in log"
-- Make only one distorted file active (remove frm the list or un-tick others)
-- Press Start button
-- Take screenshot (Alt+PrnScr or Win+Shift+S and then Ctrl+V into image editor)
-- Archive the screenshot with `FFMetrics.log` and upload to dropbox or similar and send me the link
+- Run the program with option `-log-level=debug`.
+- In program menu activate option “Write FFMpeg commands in log”.
+- Make only one distorted file active (remove frm the list or un-tick others).
+- Click “Start” button.
+- Take screenshot (Alt+PrnScr or Win+Shift+S and then paste it into image editor and save as PNG).
+- Close the program and analyze `FFMetrics.log`. You can try to run the ffmpeg command directly from command line;
+- Upload archived `FFMetrics.log` with screenshot to dropbox (or similar) and share the link.
 
 
 ### Common issues
-1. "Start" button disabled
-    - Ensure you added reference file, at least one active distorted file (checkbox on the left of the file name is ticked) and at least one metric's checkbox is ticked. Files' media info should be shown.
+1. “Start” button disabled
+    - No FFMpeg.exe found;
+    - No reference file, reference file does not exist (red file name) or program unable to get its media info;
+    - No distorted file, distorted file does not exist (red file name), program unable to get its media info or it is inactive (checkbox on the left of the file name is not ticked);
+    - No any metric selected.
 2. VMAF checkbox disabled
     - FFMpeg.exe does not support VMAF. [Download](https://ffmpeg.org/download.html) newer version, make sure it supports VMAF.
     - No `vmaf-models` folder with supported models in it. FFMpeg might support **pkl** model but there are only **json** models in the folder or visa versa.
