@@ -83,6 +83,29 @@ Well, and build shiny interactive graphs of course:
 - You have to be careful and supply video files in the same colour range or with correct meta with the colour range. Otherwise ffmpeg.exe could make incorrect transformation and give you incorrect results ([more details](https://www.vegascreativesoftware.info/us/forum/magicyuv-2-20-released--117638/?page=3#ca772279)). I do have plans to improve the program to prevent/minimize this happen.
 
 
+## Troubleshooting
+- Delete `FFMetrics.log`
+- Run the program with option `-log-level=debug`
+- In program menu activate option "Write FFMpeg commands in log"
+- Make only one distorted file active (remove frm the list or un-tick others)
+- Press Start button
+- Take screenshot (Alt+PrnScr or Win+Shift+S and then Ctrl+V into image editor)
+- Archive the screenshot with `FFMetrics.log` and upload to dropbox or similar and send me the link
+
+
+### Common issues
+1. "Start" button disabled
+    - Ensure you added reference file, at least one active distorted file (checkbox on the left of the file name is ticked) and at least one metric's checkbox is ticked. Files' media info should be shown.
+2. VMAF checkbox disabled
+    - FFMpeg.exe does not support VMAF. [Download](https://ffmpeg.org/download.html) newer version, make sure it supports VMAF.
+    - No `vmaf-models` folder with supported models in it. FFMpeg might support **pkl** model but there are only **json** models in the folder or visa versa.
+3. Error while calculating VMAF metric
+    - Invalid VMAF model file. The first thing that you should check if you downloaded models on you own. Model file must be less than 30KB and should not contain HTML in it.
+    - Ensure program path only contains English characters. FFMetrics itself should not have issues with non-English characters, but FFMpeg.exe could fail while trying to open model file.
+4. I'm trying to calculate VMAF metric comparing the file with itself and not getting score 100.
+    - It is normal, based on [VMAF FAQ](https://github.com/Netflix/vmaf/blob/master/FAQ.md#q-when-i-compare-a-video-with-itself-as-reference-i-expect-to-get-a-perfect-score-of-vmaf-100-but-what-i-see-is-a-score-like-987-is-there-a-bug)
+
+
 
 ## Author
 fifonik
