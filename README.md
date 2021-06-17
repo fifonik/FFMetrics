@@ -43,12 +43,12 @@ Well, and build shiny interactive graphs of course:
 
 
 ## How to use
-- Unpack into a folder
-- Put FFMpeg.exe (and accompanied dll files if you use dynamic build) into the program folder or make it available through system %PATH%
-- Run the program
-- Use UI to add reference file and at least one distorted file (you can drag & drop files from Explorer or use file choosers).
-- Select metrics you'd like to calculate
-- Click “Start” button
+- Unpack into a folder;
+- Put FFMpeg.exe (and accompanied dll files if you use dynamic build) into the program folder or make it available through system %PATH%;
+- Run the program;
+- Use UI to add reference file and at least one distorted file (you can drag & drop files from Explorer or use file choosers);
+- Select metrics you'd like to calculate;
+- Click “Start” button.
 
 
 ## How to run with command line options
@@ -79,34 +79,34 @@ Well, and build shiny interactive graphs of course:
 
 
 ## Limitations
-- No MSE
-- No libvmaf's PSNR & SSIM (ffmpeg can calculate PSNR & SSIM in two different ways and values that you can get using different methods are not exactly the same)
-- You have to be careful and supply video files in the same colour range or with correct meta with the colour range. Otherwise ffmpeg.exe could make incorrect transformation and give you incorrect results ([more details](https://www.vegascreativesoftware.info/us/forum/magicyuv-2-20-released--117638/?page=3#ca772279)). I do have plans to improve the program to prevent/minimize this happen.
+- You have to be very careful and supply video files in the same colour range or with correct colour range's meta. Otherwise ffmpeg.exe could make incorrect transformation and give you incorrect results ([more details](https://www.vegascreativesoftware.info/us/forum/magicyuv-2-20-released--117638/?page=3#ca772279)). I do have plans to improve the program to prevent/minimize this happen.
 
 
 ## Troubleshooting
-- Delete `FFMetrics.log`
-- Run the program with option `-log-level=debug`.
-- In program menu activate option “Write FFMpeg commands in log”.
-- Make only one distorted file active (remove frm the list or un-tick others).
-- Click “Start” button.
-- Take screenshot (Alt+PrnScr or Win+Shift+S and then paste it into image editor and save as PNG).
-- Close the program and analyze `FFMetrics.log`. You can try to run the ffmpeg command directly from command line;
+- Close FFMetrics and delete `FFMetrics.log`;
+- Run the program with option `-log-level=debug`;
+- In program menu activate “Option | Write FFMpeg commands in log”;
+- Add reference file;
+- Add one distorted file and make it active;
+- Click “Start” button;
+- Take screenshot (Alt+PrnScr or Win+Shift+S and then paste it into image editor and save as PNG);
+- Close the program;
+- Analyze `FFMetrics.log`. You can try to run the ffmpeg command directly;
 - Upload archived `FFMetrics.log` with screenshot to dropbox (or similar) and share the link.
 
 
 ### Common issues
 1. “Start” button disabled
     - No FFMpeg.exe found;
-    - No reference file, reference file does not exist (red file name) or program unable to get its media info;
-    - No distorted file, distorted file does not exist (red file name), program unable to get its media info or it is inactive (checkbox on the left of the file name is not ticked);
-    - No any metric selected.
+    - No reference file added, reference file does not exist (red file name) or program unable to get its media info;
+    - No distorted file added, distorted file does not exist (red file name), program unable to get its media info, it is inactive (checkbox on the left of the file name is not ticked);
+    - No metrics selected.
 2. VMAF checkbox disabled
     - FFMpeg.exe does not support VMAF. [Download](https://ffmpeg.org/download.html) newer version, make sure it supports VMAF.
     - No `vmaf-models` folder with supported models in it. FFMpeg might support **pkl** model but there are only **json** models in the folder or visa versa.
 3. Error while calculating VMAF metric
     - Invalid VMAF model file. The first thing that you should check if you downloaded models on you own. Model file must be less than 30KB and should not contain HTML in it.
-    - Ensure program path only contains English characters. FFMetrics itself should not have issues with non-English characters, but FFMpeg.exe could fail while trying to open model file.
+    - Ensure program path contains English characters only. FFMetrics itself should not have issues with non-English characters, but FFMpeg.exe could fail while trying to open model file.
 4. I'm trying to calculate VMAF metric comparing the file with itself and not getting score 100.
     - It is normal, based on [VMAF FAQ](https://github.com/Netflix/vmaf/blob/master/FAQ.md#q-when-i-compare-a-video-with-itself-as-reference-i-expect-to-get-a-perfect-score-of-vmaf-100-but-what-i-see-is-a-score-like-987-is-there-a-bug)
 
