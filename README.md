@@ -68,7 +68,7 @@ Well, and build shiny interactive graphs of course:
     -save-results-file=C:\path\file.csv
     -scaling-method=NEIGHBOR|GAUSS|BILINEAR|BICUBIC|LANCZOS|SINC|SPLINE
                                            Default: BICUBIC
-    -vmaf-model=filename.pkl               Default: detected automatically based on reference media info
+    -vmaf-model=filename                   Default: detected automatically based on reference media info
     -vmaf-pool=MEAN|HARMONIC_MEAN          Default: MEAN
     -vmaf-phone-model
 
