@@ -26,6 +26,7 @@ Well, and build shiny interactive graphs of course:
 - VMAF model selected automatically based on reference media info, but can be changed using UI
 - Supported VMAF models type (**pkl** or **json**) detected automatically
 - Most program options could be supplied as command line parameters
+- Free. No registration, banners, tracking etc.
 
 
 
