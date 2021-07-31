@@ -30,7 +30,7 @@ Well, and build shiny interactive graphs of course:
 
 
 
-## Latest version: [0.9.8 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.9.8)
+## Latest version: [0.9.9 Beta](https://github.com/fifonik/FFMetrics/releases/tag/v0.9.9)
 
 
 
@@ -69,9 +69,11 @@ Well, and build shiny interactive graphs of course:
     -save-results-file=C:\path\file.csv
     -scaling-method=NEIGHBOR|GAUSS|BILINEAR|BICUBIC|LANCZOS|SINC|SPLINE
                                            Default: BICUBIC
+    -skip=<seconds>                        Duration of video stream to be skipped
+                                           Default: 0 (stream processed from the beginning)
     -vmaf-model=filename                   Default: detected automatically based on reference media info
-    -vmaf-pool=MEAN|HARMONIC_MEAN          Default: MEAN
     -vmaf-phone-model
+    -vmaf-pool=MEAN|HARMONIC_MEAN          Default: MEAN
 
 #### Examples
 `FFMetrics.exe \\server\path\to\ref.mp4 "c:\path\to\my file.mp4"`<br />
