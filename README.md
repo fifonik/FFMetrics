@@ -88,11 +88,12 @@ Well, and build shiny interactive graphs of course:
 ## Troubleshooting
 - Close FFMetrics and delete `FFMetrics.log`;
 - Run the program with option `-log-level=debug`;
-- In program menu activate “Option | Write FFMpeg commands in log”;
+- In program menu activate “Options | Write FFMpeg commands to log”;
 - Add reference file;
-- Add one distorted file and make it active;
+- Add one distorted file and make it active (checkbox on the left of filename must be ticked);
+- Make sure at least one metric is active (checkbox on the left of metric name must be ticked)
 - Click “Start” button;
-- Take screenshot (Alt+PrnScr or Win+Shift+S and then paste it into image editor and save as PNG);
+- Take screenshot (Alt+PrnScr or Win+Shift+S and paste it into image editor and save as PNG);
 - Close the program;
 - Analyze `FFMetrics.log`. You can try to run the ffmpeg command directly;
 - Upload archived `FFMetrics.log` with screenshot to dropbox (or similar) and share the link.
