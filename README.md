@@ -108,7 +108,7 @@ Well, and build shiny interactive graphs of course:
 2. VMAF checkbox disabled
     - FFMpeg.exe does not support VMAF. [Download](https://ffmpeg.org/download.html) newer version, make sure it supports VMAF.
     - No `vmaf-models` folder with supported models in it. FFMpeg might support **pkl** model but there are only **json** models in the folder or visa versa.
-    - Program path contains non-English characters only. FFMetrics itself should not have issues with non-English characters, but FFMpeg.exe could fail while trying to open model file during FFMpeg features detection startup process.
+    - Program path contains non-English characters. FFMetrics itself should not have issues with non-English characters in paths, but FFMpeg.exe could fail while trying to open VMAF model file during FFMpeg feature-detection startup process.
 3. Error while calculating VMAF metric
     - Invalid VMAF model file. The first thing that you should check if you downloaded models on you own. Model file must be less than 30KB and should not contain HTML in it.
 4. I'm trying to calculate VMAF metric comparing the file with itself and not getting score 100.
