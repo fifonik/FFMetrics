@@ -82,7 +82,7 @@ Well, and build shiny interactive graphs of course:
 
 
 ## Limitations
-- Program path should contains English characters only, otherwise FFMpeg will not be able to find models;
+- Program path should contains English characters only, otherwise FFMpeg will not be able to find VMAF models;
 - You have to be very careful and supply video files in the same colour range or with correct colour range's meta. Otherwise ffmpeg.exe could make incorrect transformation and give you incorrect results ([more details](https://www.vegascreativesoftware.info/us/forum/magicyuv-2-20-released--117638/?page=3#ca772279)). I do have plans to improve the program to prevent/minimize this happen.
 
 
