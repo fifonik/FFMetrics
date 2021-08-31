@@ -112,7 +112,7 @@ Well, and build shiny interactive graphs of course:
 3. Error while calculating VMAF metric
     - Invalid VMAF model file. The first thing that you should check if you downloaded models on you own. Model file must be less than 30KB and should not contain HTML in it.
 4. I'm trying to calculate VMAF metric comparing the file with itself and not getting score 100.
-    - It is normal, based on [VMAF FAQ](https://github.com/Netflix/vmaf/blob/master/FAQ.md#q-when-i-compare-a-video-with-itself-as-reference-i-expect-to-get-a-perfect-score-of-vmaf-100-but-what-i-see-is-a-score-like-987-is-there-a-bug)
+    - Based on [VMAF FAQ](https://github.com/Netflix/vmaf/blob/master/FAQ.md#q-when-i-compare-a-video-with-itself-as-reference-i-expect-to-get-a-perfect-score-of-vmaf-100-but-what-i-see-is-a-score-like-987-is-there-a-bug) this is by design.
 
 
 
