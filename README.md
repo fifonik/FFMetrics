@@ -31,6 +31,7 @@ Well, and build shiny interactive graphs of course:
 
 
 ## Latest version: [1.0.0](https://github.com/fifonik/FFMetrics/releases/tag/v1.0.0)
+## Latest beta version: [1.1.0 beta 1](https://github.com/fifonik/FFMetrics/releases/tag/v1.1.0-beta.1)
 
 
 
@@ -91,7 +92,7 @@ Well, and build shiny interactive graphs of course:
 - In program menu activate “Options | Write FFMpeg commands to log”;
 - Add reference file;
 - Add one distorted file and make it active (checkbox on the left of filename must be ticked);
-- Make sure at least one metric is active (checkbox on the left of metric name must be ticked)
+- Make sure at least one metric is active (checkbox on the left of metric name must be ticked);
 - Click “Start” button;
 - Take screenshot (Alt+PrnScr or Win+Shift+S and paste it into image editor and save as PNG);
 - Close the program;
@@ -103,7 +104,7 @@ Well, and build shiny interactive graphs of course:
 1. “Start” button disabled
     - No FFMpeg.exe found;
     - No reference file added, reference file does not exist (red file name) or program unable to get its media info;
-    - No distorted file added, distorted file does not exist (red file name), program unable to get its media info, it is inactive (checkbox on the left of the file name is not ticked);
+    - No distorted file added, distorted file does not exist (red file name), program unable to get its media info or no active fistorted files (files with checkbox on the left of the file name ticked);
     - No metrics selected.
 2. VMAF checkbox disabled
     - FFMpeg.exe does not support VMAF. [Download](https://ffmpeg.org/download.html) newer version, make sure it supports VMAF.
