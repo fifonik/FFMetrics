@@ -64,7 +64,7 @@ Well, and build shiny interactive graphs of course:
     -log-frames                            Log frames' metrics in csv files
     -log-frames-dir=C:\path\               Folder where frame's metrics will be stored
     -log-level=DEBUG|ERROR|INFO            Default: INFO
-    -metric=PSNR|SSIM|VMAF                 Default: all (`-metric=PSNR -metric=SSIM -metric=VMAF`)
+    -metric=PSNR|SSIM|VMAF                 Default: all (-metric=PSNR -metric=SSIM -metric=VMAF)
     -project=C:\path\to\project.ffmproj    Read project options from specified file
     -run                                   Run calculation when program started
     -save-results                          After calculation save results to log
