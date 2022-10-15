@@ -12,16 +12,16 @@ Well, and build shiny interactive graphs of course:
 
 ## Features
 - PSNR, SSIM, VMAF visual quality metrics;
-- Processing up to 24 files in one go (this can be increased by used configuring graph styles) ;
+- Processing up to 24 files in one go (this can be increased by configuring graphs' styles) ;
 - No limitations on frame size for PSNR/SSIM, Full HD/4K for VMAF;
 - Brief media info for reference and distorted files;
 - Thumbnail for reference file;
 - “Bad” frames can be extracted and saved as PNG images for further analisys;
 - Only parts of video files can be analyzed;
-- Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers ;
+- Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers;
 - Frames graphs can be zoomed in/out with mouse wheel (try it over graph or graph's axes), panned with right mouse button and saved as SVG or PNG;
 - Frames metrics can be saved as tab-delimited **csv** files and then opened in Excel;
-- FFMpeg commands can be saved to log file (`FFMetrics.log`);
+- FFMpeg commands issued by FFMetrics can be saved to log file (`FFMetrics.log`);
 - Average metrics, frames statistics, frame size, bitrate, date/time and file name can be saved to tab-delimited **csv** file (appended) and then opened in Excel;
 - VMAF model selected automatically based on reference media info, but can be changed using UI;
 - Supported VMAF models type (**in-build in FFMpeg**, **pkl** or **json**) detected automatically;
@@ -38,8 +38,8 @@ Well, and build shiny interactive graphs of course:
 
 ## Requirements
 - .NET Framework 4.8.0 or later. The framework is already included since Windows 10 1903 so you do not need to install it separately. However, if you use earlier versions of Windows 10 or Windows 7/8, the program should ask you to [download](https://dotnet.microsoft.com/download/dotnet-framework/net48) and install it.
-- FFMpeg.exe. You need to download it from [official ffmpeg web site](https://ffmpeg.org/download.html). You can try static build for simplicity, but for real usage I'd recommend to use shared build.
-- VMAF metric require special FFMpeg's build. It is supported since FFMpeg version 4.3 (stable).
+- FFMpeg.exe. You need to download it from [official ffmpeg web site](https://ffmpeg.org/download.html). You can try static build for simplicity. However, for real usage I'd recommend to use shared build.
+- VMAF metric require special FFMpeg's build. It is supported since FFMpeg version 4.3 (stable). However, you'd better use FFMpeg 4 or newer.
   In addition, VMAF model files must be in sub-folder `vmaf-models`. The most common models are already included in archive. You can get other models from [Netflix VMAF project](https://github.com/Netflix/vmaf/)
   If you use the most recent FFMpeg builds, the vmaf models could be in-build into it so you do not need to use separate vmaf models.
 
@@ -47,7 +47,7 @@ Well, and build shiny interactive graphs of course:
 
 ## How to use
 - Unpack into a folder;
-- Put FFMpeg.exe (and accompanied dll files if you use dynamic build) into the program folder or make it available through system %PATH%;
+- Put FFMpeg.exe (and accompanied dll files if you use shared build) into the program folder or make it available through system %PATH%;
 - Run the program;
 - Use UI to add reference file and at least one distorted file (you can drag & drop files from Explorer or use file choosers);
 - Select metrics you'd like to calculate;
@@ -108,8 +108,8 @@ All options can be provided using single leading dash (-option) or double leadin
 ### Common issues
 1. “Start” button disabled
     - No FFMpeg.exe found;
-    - No reference file added, reference file does not exist (red file name) or program unable to get its media info;
-    - No distorted file added, distorted file does not exist (red file name), program unable to get its media info or no active fistorted files (files with checkbox on the left of the file name ticked);
+    - No reference file added, reference file does not exist (red file name) or program is unable to get file's media info;
+    - No distorted file added, distorted file does not exist (red file name), program unable to get file's media info or no active distorted files (files with checkbox on the left of the file name ticked);
     - No metrics selected.
 2. VMAF checkbox disabled
     - FFMpeg.exe does not support VMAF. [Download](https://ffmpeg.org/download.html) newer version, make sure it supports VMAF.
@@ -117,7 +117,7 @@ All options can be provided using single leading dash (-option) or double leadin
     - Program path contains non-English characters. FFMetrics itself should not have issues with non-English characters in paths, but FFMpeg.exe could fail while trying to open VMAF model file during FFMpeg feature-detection startup process.
 3. Error while calculating VMAF metric
     - Invalid VMAF model file. The first thing that you should check if you downloaded models on you own. Model file must be less than 30KB and should not contain HTML in it.
-4. I'm trying to calculate VMAF metric comparing the file with itself and not getting score 100.
+4. I'm trying to calculate VMAF metric comparing the file with itself and **not** getting score 100.
     - Based on [VMAF FAQ](https://github.com/Netflix/vmaf/blob/master/FAQ.md#q-when-i-compare-a-video-with-itself-as-reference-i-expect-to-get-a-perfect-score-of-vmaf-100-but-what-i-see-is-a-score-like-987-is-there-a-bug) this is by design.
 
 
