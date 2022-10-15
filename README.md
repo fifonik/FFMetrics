@@ -6,41 +6,42 @@ The program allows you to select files without dealing with command line, calcul
 
 Well, and build shiny interactive graphs of course:
 
-<p align="center"><img src="screenshots/screenshot.png" width="919"/></p>
+<p align="center"><img src="screenshots/screenshot.1.3.1.png" width="900"/></p>
 
 
 
 ## Features
-- PSNR, SSIM, VMAF visual quality metrics
-- Processing up to 12 files in one go
-- No limitations on frame size for PSNR/SSIM, Full HD/4K for VMAF
-- Brief media info for reference and distorted files
-- Thumbnail for reference file  
-- “Bad” frames can be extracted and saved as PNG images for further analisys
-- Only parts of video files can be analyzed
-- Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers 
-- Frames graphs can be zoomed in/out with mouse wheel (try it over graph or graph's axes), panned with right mouse button and saved as PNG
-- Frames metrics can be saved as tab-delimited **csv** files and then opened in Excel
-- FFMpeg commands can be saved to log file (`FFMetrics.log`)
-- Average metrics, frames statistics, frame size, bitrate, date/time and file name can be saved to tab-delimited **csv** file (appended) and then opened in Excel
-- VMAF model selected automatically based on reference media info, but can be changed using UI
-- Supported VMAF models type (**pkl** or **json**) detected automatically
-- Most program options could be supplied as command line parameters
+- PSNR, SSIM, VMAF visual quality metrics;
+- Processing up to 24 files in one go (this can be increased by used configuring graph styles) ;
+- No limitations on frame size for PSNR/SSIM, Full HD/4K for VMAF;
+- Brief media info for reference and distorted files;
+- Thumbnail for reference file;
+- “Bad” frames can be extracted and saved as PNG images for further analisys;
+- Only parts of video files can be analyzed;
+- Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers ;
+- Frames graphs can be zoomed in/out with mouse wheel (try it over graph or graph's axes), panned with right mouse button and saved as SVG or PNG;
+- Frames metrics can be saved as tab-delimited **csv** files and then opened in Excel;
+- FFMpeg commands can be saved to log file (`FFMetrics.log`);
+- Average metrics, frames statistics, frame size, bitrate, date/time and file name can be saved to tab-delimited **csv** file (appended) and then opened in Excel;
+- VMAF model selected automatically based on reference media info, but can be changed using UI;
+- Supported VMAF models type (**in-build in FFMpeg**, **pkl** or **json**) detected automatically;
+- Most program options could be supplied as command line parameters;
 - Free. No registration, banners, tracking etc.
 
 
 
 ## Latest version: 
-- **Beta: [1.3.1 beta 2](https://github.com/fifonik/FFMetrics/releases/tag/v1.3.1-beta.2)**
-- Stable: [1.0.0](https://github.com/fifonik/FFMetrics/releases/tag/v1.0.0)
+- Stable: [1.3.1](https://github.com/fifonik/FFMetrics/releases/tag/v1.3.1)
+- Stable (previous): [1.0.0](https://github.com/fifonik/FFMetrics/releases/tag/v1.0.0)
 
 
 
 ## Requirements
-- .NET Framework 4.7.2 or later. The framework is already included since Windows 10 1803 (4.8 included since Windows 10 1903) so you do not need to install it separately. However, if you use earlier versions of Windows 10 or Windows 7/8, the program should ask you to [download](https://dotnet.microsoft.com/download/dotnet-framework/net472) and install it.
+- .NET Framework 4.8.0 or later. The framework is already included since Windows 10 1903 so you do not need to install it separately. However, if you use earlier versions of Windows 10 or Windows 7/8, the program should ask you to [download](https://dotnet.microsoft.com/download/dotnet-framework/net48) and install it.
 - FFMpeg.exe. You need to download it from [official ffmpeg web site](https://ffmpeg.org/download.html). You can try static build for simplicity, but for real usage I'd recommend to use shared build.
 - VMAF metric require special FFMpeg's build. It is supported since FFMpeg version 4.3 (stable).
   In addition, VMAF model files must be in sub-folder `vmaf-models`. The most common models are already included in archive. You can get other models from [Netflix VMAF project](https://github.com/Netflix/vmaf/)
+  If you use the most recent FFMpeg builds, the vmaf models could be in-build into it so you do not need to use separate vmaf models.
 
 
 
@@ -66,15 +67,19 @@ Well, and build shiny interactive graphs of course:
     -metric=PSNR|SSIM|VMAF                 Default: all (-metric=PSNR -metric=SSIM -metric=VMAF)
     -project=C:\path\to\project.ffmproj    Read project options from specified file
     -run                                   Run calculation when program started
-    -save-results                          After calculation save results to log
-    -save-results-file=C:\path\file.csv
+    -auto-save-results                     After calculation save results to log
+    -auto-save-results-file=C:\path\file.csv
     -scaling-method=NEIGHBOR|GAUSS|BILINEAR|BICUBIC|LANCZOS|SINC|SPLINE
                                            Default: BICUBIC
     -skip=<seconds>                        Duration of video stream to be skipped
                                            Default: 0 (stream processed from the beginning)
+    -temp-dir=dirspec                      Default: default user temporary directory
     -vmaf-model=filename                   Default: detected automatically based on reference media info
     -vmaf-phone-model
     -vmaf-pool=MEAN|HARMONIC_MEAN          Default: MEAN
+
+All options can be provided using single leading dash (-option) or double leading dash (--option).
+
 
 #### Examples
 `FFMetrics.exe \\server\path\to\ref.mp4 "c:\path\to\my file.mp4"`<br />
@@ -89,7 +94,7 @@ Well, and build shiny interactive graphs of course:
 ## Troubleshooting
 - Close FFMetrics and delete `FFMetrics.log`;
 - Run the program with option `-log-level=debug`;
-- In program menu activate “Options | Write FFMpeg commands to log”;
+- In program menu activate “Options | Write FFMpeg commands to log” (required for version below 1.3.0);
 - Add reference file;
 - Add one distorted file and make it active (checkbox on the left of filename must be ticked);
 - Make sure at least one metric is active (checkbox on the left of metric name must be ticked);
