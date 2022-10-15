@@ -20,6 +20,7 @@ Well, and build shiny interactive graphs of course:
 - Only parts of video files can be analyzed;
 - Easy to use UI: drag & drop files from Explorer onto Reference field and Files list or use file choosers;
 - Frames graphs can be zoomed in/out with mouse wheel (try it over graph or graph's axes), panned with right mouse button and saved as SVG or PNG;
+- Frames graphs are optional and can be turned off in menu or with command line option;
 - Frames metrics can be saved as tab-delimited **csv** files and then opened in Excel;
 - FFMpeg commands issued by FFMetrics can be saved to log file (`FFMetrics.log`);
 - Average metrics, frames statistics, frame size, bitrate, date/time and file name can be saved to tab-delimited **csv** file (appended) and then opened in Excel;
