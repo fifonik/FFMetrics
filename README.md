@@ -40,8 +40,8 @@ Well, and build shiny interactive graphs of course:
 - .NET Framework 4.8.0 or later. The framework is already included since Windows 10 1903 so you do not need to install it separately. However, if you use earlier versions of Windows 10 or Windows 7/8, the program should ask you to [download](https://dotnet.microsoft.com/download/dotnet-framework/net48) and install it.
 - FFMpeg.exe. You need to download it from [official ffmpeg web site](https://ffmpeg.org/download.html). You can try static build for simplicity. However, for real usage I'd recommend to use shared build.
 - VMAF metric require special FFMpeg's build. It is supported since FFMpeg version 4.3 (stable). However, you'd better use FFMpeg 4 or newer.
-  In addition, VMAF model files must be in sub-folder `vmaf-models`. The most common models are already included in archive. You can get other models from [Netflix VMAF project](https://github.com/Netflix/vmaf/)
-  If you use the most recent FFMpeg builds, the vmaf models could be in-build into it so you do not need to use separate vmaf models.
+  In addition, VMAF model files must be in sub-folder `vmaf-models`. The most common models are already included in archive. You can get other models from [Netflix VMAF project](https://github.com/Netflix/vmaf/).
+  If you use the most recent FFMpeg builds, the vmaf models could be **in-build** into it so you do not need to use separate vmaf models.
 
 
 
