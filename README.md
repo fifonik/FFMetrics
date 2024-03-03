@@ -131,6 +131,9 @@ All options can be provided using single leading dash (-option) or double leadin
 fifonik
 
 
+## Support me if you like the program
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/fifonik)
+
 
 ## Discussions
 - [Discussion in Vegas forum](https://www.vegascreativesoftware.info/us/forum/ffmetrics-yet-another-program-for-quality-metrics-calculation--122246/) (in English)
