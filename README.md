@@ -130,8 +130,6 @@ All options can be provided using single leading dash (-option) or double leadin
 ## Author
 fifonik
 
-
-## Support me if you like the program
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/fifonik)
 
 
