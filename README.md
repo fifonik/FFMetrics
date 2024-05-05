@@ -82,7 +82,10 @@ Well, and build shiny interactive graphs of course:
     -vmaf-model=filename                   Default: detected automatically based on reference media info
     -vmaf-phone-model
     -vmaf-pool=MEAN|HARMONIC_MEAN          Default: MEAN
-    -vmaf-subsample=<value>                Default: 1
+    -vmaf-subsample=<value>                1 means VMAF metric for every frame to be calculated
+                                           2 means VMAF metric for every 2nd frame to be calculated
+                                           And so on
+                                           Default: 1
 
 All options can be provided using single leading dash (-option) or double leading dash (--option).
 
