@@ -32,7 +32,7 @@ Well, and build shiny interactive graphs of course:
 
 
 ## Latest version: 
-- Latest Beta: [1.5.0 beta 1](https://github.com/fifonik/FFMetrics/releases/tag/v1.5.0-beta.1)
+- **Latest Beta: [1.5.0 beta 1](https://github.com/fifonik/FFMetrics/releases/tag/v1.5.0-beta.1) (recommended)**
 - Stable: [1.3.1](https://github.com/fifonik/FFMetrics/releases/tag/v1.3.1)
 
 
@@ -82,6 +82,7 @@ Well, and build shiny interactive graphs of course:
     -vmaf-model=filename                   Default: detected automatically based on reference media info
     -vmaf-phone-model
     -vmaf-pool=MEAN|HARMONIC_MEAN          Default: MEAN
+    -vmaf-subsample=<value>                Default: 1
 
 All options can be provided using single leading dash (-option) or double leading dash (--option).
 
