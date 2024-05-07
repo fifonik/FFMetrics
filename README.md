@@ -93,7 +93,7 @@ All options can be provided using single leading dash (-option) or double leadin
 #### Examples
 `FFMetrics.exe \\server\path\to\ref.mp4 "c:\path\to\my file.mp4"`<br />
 `FFMetrics.exe -log-frames -metric=SSIM -metric=VMAF -run c:\to\ref.mp4 c:\to1\file1.avi c:\to2\file2.avs`<br />
-`FFMetrics.exe -project=c:\path\to\project.ffmproj -vmaf-pool=harmonic_mean -run`<br />
+`FFMetrics.exe -project=c:\path\to\project.ffmproj -vmaf-model=vmaf_v0.6.1neg -vmaf-pool=harmonic_mean -run`<br />
 
 
 ## Limitations
