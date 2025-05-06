@@ -110,7 +110,7 @@ All options can be provided using single leading dash (-option) or double leadin
 - Click “Start” button;
 - Take screenshot (Alt+PrnScr or Win+Shift+S and paste it into image editor and save as PNG);
 - Close the program;
-- Analyze `FFMetrics.log`. You can try to run the ffmpeg command directly;
+- Analyze `FFMetrics.log`. You can try to run the very last ffmpeg command directly;
 - Upload archived `FFMetrics.log` with screenshot to dropbox (or similar) and share the link.
 
 
