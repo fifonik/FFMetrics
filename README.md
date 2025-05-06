@@ -25,7 +25,7 @@ Well, and build shiny interactive graphs of course:
 - FFMpeg commands issued by FFMetrics can be saved to log file (`FFMetrics.log`);
 - Average metrics, frames statistics, frame size, bitrate, date/time and file name can be saved to tab-delimited **csv** file (appended) and then opened in Excel;
 - VMAF model selected automatically based on reference media info, but can be changed using UI;
-- Supported VMAF models type (**in-build in FFMpeg**, **json** or **pkl**) detected automatically;
+- Supported VMAF models type (**in-build**, **json** or **pkl**) detected automatically;
 - Most program options could be supplied as command line parameters;
 - Free. No registration, banners, tracking etc.
 
