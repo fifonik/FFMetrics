@@ -33,7 +33,7 @@ Well, and build shiny interactive graphs of course:
 
 ## Latest version: 
 - Stable: [1.5.0](https://github.com/fifonik/FFMetrics/releases/tag/v1.5.0)
-- Latest Beta [1.6.0](https://github.com/fifonik/FFMetrics/releases/tag/v1.6.0-beta.1)
+- Latest Beta [1.6.0 beta 2](https://github.com/fifonik/FFMetrics/releases/tag/v1.6.0-beta.2)
 
 
 
