@@ -64,6 +64,9 @@ Well, and build shiny interactive graphs of course:
     -auto-save-results-file=C:\path\file.csv
     -duration=<seconds>                    Duration of video stream to be processed
                                            Default: 0 (whole stream used)
+    -exit                                  Exit after run
+    -ffmpeg-dir=dirspec                    FFMpeg location directory
+                                           Default: not specified (so ffmpeg.exe expected to be in program directory or in %PATH%)
     -log-commands                          Log ffmpeg commands
     -log-frames                            Log frames' metrics in csv files
     -log-frames-dir=C:\path\               Folder where frame's metrics will be stored
