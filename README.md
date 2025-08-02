@@ -66,7 +66,8 @@ Well, and build shiny interactive graphs of course:
                                            Default: 0 (whole stream used)
     -exit                                  Exit after run
     -ffmpeg-dir=<dirspec>                  ffmpeg.exe location directory
-                                           Default: not specified (so ffmpeg.exe expected to be in program directory or in %PATH%)
+                                           Default: not specified,
+                                           so ffmpeg.exe expected to be in program directory or in %PATH%
     -log-commands                          Log ffmpeg commands
     -log-frames                            Log frames' metrics in csv files
     -log-frames-dir=<dirspec>              Directory where frame's metrics will be stored
