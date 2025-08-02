@@ -61,28 +61,30 @@ Well, and build shiny interactive graphs of course:
 
 ### Accepted options
     -auto-save-results                     After calculation save results to log
-    -auto-save-results-file=C:\path\file.csv
+    -auto-save-results-file=<filespec>     Example: C:\path\file.csv
     -duration=<seconds>                    Duration of video stream to be processed
                                            Default: 0 (whole stream used)
     -exit                                  Exit after run
-    -ffmpeg-dir=dirspec                    FFMpeg location directory
+    -ffmpeg-dir=<dirspec>                  ffmpeg.exe location directory
                                            Default: not specified (so ffmpeg.exe expected to be in program directory or in %PATH%)
     -log-commands                          Log ffmpeg commands
     -log-frames                            Log frames' metrics in csv files
-    -log-frames-dir=C:\path\               Folder where frame's metrics will be stored
+    -log-frames-dir=<dirspec>              Directory where frame's metrics will be stored
     -log-level=DEBUG|ERROR|INFO            Default: INFO
     -metric=PSNR|SSIM|VMAF                 Default: all (-metric=PSNR -metric=SSIM -metric=VMAF)
     -plot-update-speed=HIGH|NORMAL|LOW|OFF Plots update frequency
                                            Default: NORMAL
     -plot-window-manual                    Do not open plot window automatically when starting calculation
-    -project=C:\path\to\project.ffmproj    Read project options from specified file
+    -project=<filespec>                    Read project options from specified file
+                                           Example: C:\path\to\project.ffmproj
     -run                                   Run calculation when program started
     -scaling-method=NEIGHBOR|GAUSS|BILINEAR|BICUBIC|LANCZOS|SINC|SPLINE
                                            Default: BICUBIC
     -skip=<seconds>                        Duration of video stream to be skipped
                                            Default: 0 (stream processed from the beginning)
-    -temp-dir=dirspec                      Default: default user temporary directory
-    -vmaf-model=filename                   Default: detected automatically based on reference media info
+    -temp-dir=<dirspec>                    Directory where temporary files will be stored
+                                           Default: default user temporary directory
+    -vmaf-model=<filename>                 Default: detected automatically based on reference media info
     -vmaf-phone-model
     -vmaf-pool=MEAN|HARMONIC_MEAN          Default: MEAN
     -vmaf-subsample=<value>                1 means VMAF metric for every frame to be calculated
