@@ -92,9 +92,9 @@ Well, and build shiny interactive graphs of course:
                                            2 means VMAF metric for every 2nd frame to be calculated
                                            And so on
                                            Default: 1
-    -vmaf-upscale-to-model                 Upscale ref and distorted to model resolution (on by default).
-                                           To turn it off you need to specify falsy value (0 or 'false')
-                                           Default: true
+    -vmaf-upscale-to-model                 Upscale ref and distorted to model's resolution.
+                                           To turn it **off** falsy value need to be specified (0 or 'false')
+                                           Default: **on** (true)
 
 All options can be provided using single leading dash (-option) or double leading dash (--option).
 
