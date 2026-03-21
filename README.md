@@ -1,8 +1,8 @@
 ## FFMetrics — yet another program for video Visual Quality Metrics visualization
 
-FFMpeg can be used for calculating different visual quality metrics (PSNR, SSIM, VMAF). 
+FFMpeg can be used for calculating different visual quality metrics (PSNR, SSIM, VMAF, XPSNR). 
 FFMetrics is a FFMpeg GUI that purpose is to visualize quality metrics calculated by FFMpeg.
-The program allows you to select files without dealing with command line, calculate & visualize PSNR, SSIM & VMAF quality metrics for all of them in one go.
+The program allows you to select files without dealing with command line, calculate & visualize PSNR, SSIM, VMAF & XPSNR quality metrics for all of them in one go.
 
 Well, and build shiny interactive graphs of course:
 
@@ -13,7 +13,7 @@ Well, and build shiny interactive graphs of course:
 ## Features
 - PSNR, SSIM, VMAF visual quality metrics;
 - Processing up to 24 files in one go (this can be increased by configuring graphs' styles) ;
-- No limitations on frame size for PSNR/SSIM, Full HD/4K for VMAF;
+- No limitations on frame size for PSNR/SSIM/XPSNR, Full HD/4K for VMAF;
 - Brief media info for reference and distorted files;
 - Thumbnail for reference file;
 - “Bad” frames can be extracted and saved as PNG images for further analisys;
@@ -72,7 +72,7 @@ Well, and build shiny interactive graphs of course:
     -log-frames                            Log frames' metrics in csv files
     -log-frames-dir=<dirspec>              Directory where frame's metrics will be stored
     -log-level=DEBUG|ERROR|INFO            Default: INFO
-    -metric=PSNR|SSIM|VMAF                 Default: all (-metric=PSNR -metric=SSIM -metric=VMAF)
+    -metric=PSNR|SSIM|VMAF|XPSNR           Default: all (-metric=PSNR -metric=SSIM -metric=VMAF)
     -plot-update-speed=HIGH|NORMAL|LOW|OFF Plots update frequency
                                            Default: NORMAL
     -plot-window-manual                    Do not open plot window automatically when starting calculation
