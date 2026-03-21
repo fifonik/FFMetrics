@@ -6,7 +6,7 @@ The program allows you to select files without dealing with command line, calcul
 
 Well, and build shiny interactive graphs of course:
 
-<p align="center"><img src="screenshots/screenshot.1.3.1.png" width="900"/></p>
+<p align="center"><img src="screenshots/screenshot.1.7.0.png" width="900"/></p>
 
 
 
@@ -33,7 +33,7 @@ Well, and build shiny interactive graphs of course:
 
 ## Latest version: 
 - Stable: [1.6.5](https://github.com/fifonik/FFMetrics/releases/tag/v1.6.5)
-- Latest Beta [1.7.0 beta 2](https://github.com/fifonik/FFMetrics/releases/tag/v1.7.0-beta.2)
+- Latest Beta [1.7.0 beta 3](https://github.com/fifonik/FFMetrics/releases/tag/v1.7.0-beta.3)
 
 
 
