@@ -11,7 +11,7 @@ Well, and build shiny interactive graphs of course:
 
 
 ## Features
-- PSNR, SSIM, VMAF visual quality metrics;
+- PSNR, SSIM, VMAF, XPSNR visual quality metrics;
 - Processing up to 24 files in one go (this can be increased by configuring graphs' styles) ;
 - No limitations on frame size for PSNR/SSIM/XPSNR, Full HD/4K for VMAF;
 - Brief media info for reference and distorted files;
